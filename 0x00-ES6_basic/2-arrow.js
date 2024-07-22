@@ -6,5 +6,6 @@ const getNeighborhoodsList = () => {
     self.sanFranciscoNeighborhoods.push(newNeighborhood);
     return self.sanFranciscoNeighborhoods;
   };
-}
-export deafult getNeighborhoodsList;
+};
+
+export default getNeighborhoodsList;
