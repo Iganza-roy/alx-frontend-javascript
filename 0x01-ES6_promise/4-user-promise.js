@@ -7,7 +7,7 @@ export default function signUpUser(firstName, lastName) {
         lastName,
       });
     } else {
-      reject(new Error("Error"));
+      reject(new Error('Error'));
     }
   });
 }
