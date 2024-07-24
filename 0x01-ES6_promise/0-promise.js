@@ -3,8 +3,8 @@ export default function getResponseFromAPI() {
     const loaded = true;
     if (loaded) {
       resolve('success');
-    }else {
-      reject('failed to load data');
+    } else {
+      reject(new Error('failed to load data'));
     }
   });
 }
