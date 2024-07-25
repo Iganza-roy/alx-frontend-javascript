@@ -2,7 +2,7 @@ import Currency from "./3-currency.js";
 
 export default class Pricing {
   constructor(amount, currency) {
-    if (typeof amount !== "number") throw new TypeError();
+    if (typeof amount !== 'number') throw new TypeError();
     if (!(currency instanceof Currency)) throw new TypeError();
 
     this._amount = amount;
@@ -18,7 +18,7 @@ export default class Pricing {
   }
 
   set amount(amount) {
-    if (typeof amount !== "number") throw new TypeError();
+    if (typeof amount !== 'number') throw new TypeError();
     this._amount = amount;
   }
 
@@ -32,7 +32,7 @@ export default class Pricing {
   }
 
   static convertPrice(amount, conversionRate) {
-    if (typeof amount !== "number" || typeof conversionRate !== "number") {
+    if (typeof amount !== 'number' || typeof conversionRate !== 'number') {
       throw new TypeError();
     }
     return amount * conversionRate;
