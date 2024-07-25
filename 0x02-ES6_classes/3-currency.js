@@ -1,7 +1,7 @@
 export default class Currency {
   constructor(code, name) {
-    if (typeof code === 'string') throw new TypeError();
-    if (typeof name === 'string') throw new TypeError();
+    if (typeof code !== 'string') throw new TypeError();
+    if (typeof name !== 'string') throw new TypeError();
 
     this._code = code;
     this._name = name;
