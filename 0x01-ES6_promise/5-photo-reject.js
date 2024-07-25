@@ -3,7 +3,7 @@ export default function uploadPhoto(fileName) {
     if (fileName) {
       resolve('successfully uploaded');
     } else {
-      reject(new Error(`${fileName} cannot be processe`));
+      reject(new Error(`${fileName} cannot be processed`));
     }
   });
 }
