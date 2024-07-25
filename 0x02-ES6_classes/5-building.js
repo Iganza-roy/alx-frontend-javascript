@@ -8,8 +8,12 @@ class Building {
     return this._sqft;
   }
   evacuationWarningMessage() {
-    throw new Error(
-      "Class extending Building must override evacuationWarningMessage"
-    );
+    if (new.target === Building) {
+      throw new Error(
+        "Class extending Building must override evacuationWarningMessage"
+      );
+    } else {
+      throw new Error("Class not extending Building");
+    }
   }
 }
