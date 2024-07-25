@@ -3,7 +3,7 @@ export default function uploadPhoto(fileName) {
     if (fileName) {
       resolve('successfully uploaded');
     } else {
-      reject(new Error('guillaume.jpg cannot be processed'));
+      reject(new Error(`${fileName} cannot be processe`));
     }
   });
 }
