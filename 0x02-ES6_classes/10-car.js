@@ -1,6 +1,6 @@
 const carObject = Symbol("cloneCar");
 
-class Car {
+export default class Car {
   constructor(brand, motor, color) {
     this._brand = brand;
     this._motor = motor;
