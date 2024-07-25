@@ -1,14 +1,14 @@
 class Building {
   constructor(sqft) {
-    if (typeof sqft !== "number") throw new Error();
+    if (typeof sqft !== 'number') throw new Error();
     this._sqft = sqft;
 
     if (
       new.target !== Building &&
-      typeof this.evacuationWarningMessage !== "function"
+      typeof this.evacuationWarningMessage !== 'function'
     ) {
       throw new Error(
-        "Class extending Building must override evacuationWarningMessage"
+        'Class extending Building must override evacuationWarningMessage'
       );
     }
   }
@@ -18,7 +18,7 @@ class Building {
   }
   evacuationWarningMessage() {
     throw new Error(
-      "Class extending Building must override evacuationWarningMessage"
+      'Class extending Building must override evacuationWarningMessage'
     );
   }
 }
