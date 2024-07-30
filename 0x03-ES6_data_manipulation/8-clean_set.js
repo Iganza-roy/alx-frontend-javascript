@@ -3,7 +3,6 @@ const cleanSet = (set, startString) => {
     return '';
   }
   const result = [];
-
   for (let value of set) {
     if (value.startsWith(startString)) {
       result.push(value.slice(startString.length));
