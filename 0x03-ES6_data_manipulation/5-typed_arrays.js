@@ -5,7 +5,7 @@ const createInt8TypedArray = (length, position, value) => {
     throw new Error('Position outside range');
   }
   view.setInt8(position, value);
-  return buffer;
+  return view;
 };
 
 console.log(createInt8TypedArray(10, 2, 89));
