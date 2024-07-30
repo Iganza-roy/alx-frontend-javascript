@@ -2,7 +2,6 @@ const cleanSet = (set, startString) => {
   if (startString === '') {
     return '';
   }
-
   const result = [];
 
   for (let value of set) {
@@ -12,5 +11,3 @@ const cleanSet = (set, startString) => {
   }
   return result.join('-');
 };
-
-export default cleanSet;
