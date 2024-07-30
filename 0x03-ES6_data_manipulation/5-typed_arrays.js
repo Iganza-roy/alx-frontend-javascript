@@ -8,4 +8,4 @@ const createInt8TypedArray = (length, position, value) => {
   return view;
 };
 
-console.log(createInt8TypedArray(10, 2, 89));
+export default createInt8TypedArray;
