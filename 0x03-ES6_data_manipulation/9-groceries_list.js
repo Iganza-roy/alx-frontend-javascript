@@ -10,4 +10,4 @@ const groceriesList = () => {
   return groceries;
 };
 
-console.log(groceriesList());
+export default groceriesList;
