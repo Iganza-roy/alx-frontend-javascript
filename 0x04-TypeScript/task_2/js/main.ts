@@ -60,9 +60,9 @@ type Subjects = 'Math' | 'History';
 
 const teachClass = (todayClass: Subjects): string => {
   if (todayClass === 'Math') {
-    console.log('Teaching Math');
+    return 'Teaching Math';
   } else if (todayClass === 'History') {
-    console.log('Teaching History');
+    return 'Teaching History';
   } else {
     throw new Error('Invalid subject');
   }
