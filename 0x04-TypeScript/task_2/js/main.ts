@@ -41,3 +41,17 @@ const createEmployee = (salary: number | string): Teacher | Director => {
     return new Director();
   }
 };
+
+const isDirector = (
+  employee: DirectorInterface | TeacherInterface
+): employee is Director => {
+  return employee instanceof Director;
+};
+
+function executeWork(employee: DirectorInterface | TeacherInterface): void {
+  if (isDirector(employee)) {
+    console.log(employee.workDirectorTasks());
+  } else {
+    console.log(employee.workTeacherTasks());
+  }
+}
