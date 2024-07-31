@@ -55,3 +55,15 @@ function executeWork(employee: DirectorInterface | TeacherInterface): void {
     console.log(employee.workTeacherTasks());
   }
 }
+
+type Subjects = 'Math' | 'History';
+
+const teachClass = (todayClass: Subjects): string => {
+  if (todayClass === 'Math') {
+    console.log('Teaching Math');
+  } else if (todayClass === 'History') {
+    console.log('Teaching History');
+  } else {
+    throw new Error('Invalid subject');
+  }
+};
