@@ -3,7 +3,6 @@ interface DirectorInterface {
   getCoffeeBreak(): string;
   workDirectorTasks(): string;
 }
-
 interface TeacherInterface {
   workFromHome(): string;
   getCoffeeBreak(): string;
