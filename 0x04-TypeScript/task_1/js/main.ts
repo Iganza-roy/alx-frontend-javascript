@@ -33,11 +33,9 @@ interface StudentAttr {
 
 class studentClass implements StudentAttr {
   constructor(public firstName: string, public lastName: string) {}
-
   workOnHomework(): string {
     return 'Currently working';
   }
-
   displayName(): string {
     return this.firstName;
   }
